@@ -2,6 +2,13 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+This project is using GitHub API (GraphQL). Please follow the provided [documentation](https://docs.github.com/en/graphql/guides/forming-calls-with-graphql#authenticating-with-graphql) on how to create an auth token.
+
+Token should be added to the project.
+
+`touch .env.local`
+`REACT_APP_AUTH_TOKEN=<your-gh-token>` 
+
 ## Available Scripts
 
 In the project directory, you can run:

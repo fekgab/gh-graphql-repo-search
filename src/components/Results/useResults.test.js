@@ -19,12 +19,6 @@ it('should use page', () => {
   const query = 'foo'
   const { result } = renderHook(() => useResults(query), { wrapper })
 
-  /*    loading,
-    data: edges,
-    fetchMoreData,
-    hasNextPage,
-    hasPreviousPage,*/
-
   expect(result.current.loading).toBe(true)
   expect(result.current.data).toStrictEqual([])
   expect(result.current.fetchMoreData).toBeDefined()
