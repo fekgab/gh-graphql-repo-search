@@ -1,11 +1,9 @@
-import { useCallback, useState } from 'react'
+import { useCallback } from 'react'
 import { SEARCH_GH_REPOS } from '../../service/queries/queries'
 import { useQuery } from '@apollo/client'
 import * as R from 'ramda'
 
 export function useResults(query) {
-  const [page, setPage] = useState(1)
-
   const queryWithQualifier = `${query} in:name`
   const {
     data = {},

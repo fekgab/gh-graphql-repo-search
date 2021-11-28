@@ -7,10 +7,10 @@ export function Issues({ id: repoId, name, owner }) {
   const {
     loading,
     data,
-    fetchMoreData,
-    hasNextPage,
-    hasPreviousPage,
-    status,
+    // fetchMoreData,
+    // hasNextPage,
+    // hasPreviousPage,
+    // status,
     updateStatus,
   } = useIssues(name, owner)
   if (loading) return <div data-testid="issues">Loading...</div>
