@@ -1,8 +1,10 @@
+import { PrimaryButton } from './Button.sc'
+
 function Button({ children, onClick, ...rest }) {
   return (
-    <button onClick={onClick} {...rest} data-testid="button">
+    <PrimaryButton onClick={onClick} {...rest} data-testid="button">
       {children}
-    </button>
+    </PrimaryButton>
   )
 }
 
