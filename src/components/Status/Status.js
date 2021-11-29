@@ -2,6 +2,7 @@ import { CgChevronDown, CgChevronUp, CgDebug, CgGitFork } from 'react-icons/cg'
 import { Badge } from '../../base-components'
 import { useState } from 'react'
 import { Issues } from '../Issues/Issues'
+import { makeClickProps } from '../../utils/helpers'
 
 export function Status({ id, name, owner, forkCount, issueTotalCount }) {
   const [showIssues, setShowIssues] = useState(false)
@@ -9,7 +10,10 @@ export function Status({ id, name, owner, forkCount, issueTotalCount }) {
   return (
     <div data-testid="status">
       <div>
-        <Badge onClick={() => setShowIssues(!showIssues)}>
+        <Badge
+          {...makeClickProps(() => setShowIssues(!showIssues))}
+          tabIndex="0"
+        >
           <CgDebug />
           {issueTotalCount}
           {showIssues ? <CgChevronDown /> : <CgChevronUp />}

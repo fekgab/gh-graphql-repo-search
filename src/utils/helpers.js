@@ -16,3 +16,15 @@ export const toastError = (message) =>
     draggable: true,
     progress: undefined,
   })
+
+export const makeClickProps = (callback) => {
+  function onEnter(callback) {
+    return (event) =>
+      (event.key === 'Enter' || event.keyCode === 13) && callback(event)
+  }
+
+  return {
+    onClick: callback,
+    onKeyPress: onEnter(callback),
+  }
+}

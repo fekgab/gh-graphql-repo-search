@@ -1,4 +1,4 @@
-import styled from '@emotion/styled'
+import styled from '@emotion/styled/macro'
 
 export const SearchInput = styled.input`
   margin: 0 1em 0 0;

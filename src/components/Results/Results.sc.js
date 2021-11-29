@@ -1,4 +1,4 @@
-import styled from '@emotion/styled'
+import styled from '@emotion/styled/macro'
 
 export const Title = styled.h2`
   text-shadow: 0 1px 6px #ffffff33;
