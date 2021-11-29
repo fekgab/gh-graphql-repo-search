@@ -2,6 +2,8 @@ import styled from '@emotion/styled/macro'
 import { css } from '@emotion/react/macro'
 
 export const PrimaryButton = styled.button`
+  -webkit-appearance: none;
+  -webkit-border-radius: 0;
   transition: color 0.25s ease-in-out, background-color 0.25s ease-in-out;
   margin: 0 1em 0 0;
   padding: 0.15em 1em;
