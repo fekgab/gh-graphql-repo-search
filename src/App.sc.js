@@ -6,11 +6,11 @@ export const Header = styled.header`
   position: sticky;
   top: 0;
   padding: 1em;
-  background: rgba(255, 255, 255, 0.25);
-  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  background: var(--primary-inverse-alpha);
+  box-shadow: 0 8px 32px 0 var(--primary-bg-alpha);
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
-  border: 1px solid rgba(255, 255, 255, 0.18);
+  border: 1px solid var(--primary-inverse-alpha);
   height: 10em;
   display: flex;
   align-items: center;

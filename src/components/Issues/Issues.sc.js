@@ -3,7 +3,7 @@ import { css } from '@emotion/react/macro'
 
 export const StatusContainer = styled.div`
   margin-bottom: 1em;
-  border-bottom: 1px solid #000;
+  border-bottom: 1px solid var(--primary);
 `
 
 export const PaginationContainer = styled.div`
@@ -17,7 +17,7 @@ export const Status = styled.span`
   ${({ isActive }) =>
     isActive &&
     css`
-      border-bottom: 2px solid #00008bff;
+      border-bottom: 2px solid var(--primary-bg);
       font-weight: 600;
     `}
 `

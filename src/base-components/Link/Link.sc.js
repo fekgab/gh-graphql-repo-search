@@ -5,9 +5,9 @@ export const Anchor = styled.a`
   display: inline-flex;
   align-items: center;
   font-size: 1.15em;
-  color: #00008bff;
+  color: var(--primary-bg);
 
   &:hover {
-    color: #00008b99;
+    color: #var(--primary-bg-alpha);
   }
 `
